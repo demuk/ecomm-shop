@@ -23,6 +23,6 @@ def register():
     return render_template('register.html', title='register')
 
 
-@app.route('/account')
+@app.route('/account', methods=['GET', 'POST'])
 def account():
     return render_template('account.html', title='account')
