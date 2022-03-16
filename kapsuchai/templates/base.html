@@ -20,8 +20,8 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/tea-leaf.png')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{url_for('static',filename='images/tea-leaf.png')}}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="custom-select-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="KSH">
                             <option>KSH</option>
                             <option>USH</option>
                             <option>TSH</option>
@@ -57,17 +57,16 @@
                     </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li><a href="{{url_for('account')}}"><i class="fa fa-user s_color"></i> My Account</a></li>
                             <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                            <li><a href="{{url_for('about')}}"><i class="fas fa-headset"></i> Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="login-box">
                         <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-                            <option>Register Here</option>
-                            <option>Sign In</option>
+                            <option> <a href="{{url_for('account')}}"/> Sign In </option>
                         </select>
                     </div>
                     <div class="text-slid-box">
@@ -107,16 +106,11 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-                                <li><a href="shop.html">Sidebar Shop</a></li>
-                                <li><a href="shop-detail.html">Shop Detail</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="{{url_for('about')}}">Cart</a></li>
+                                <li><a href="{{url_for('account')}}">My Account</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('account')}}">Gallery</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -186,10 +180,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>ABOUT US</h2>
+                    <h2>{{title.upper()}}</h2>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">ABOUT US</li>
+                        <li class="breadcrumb-item"><a href="{{url_for('home')}}">Home</a></li>
+                        <li class="breadcrumb-item active">{{title.capitalize()}}</li>
                     </ul>
                 </div>
             </div>
@@ -228,10 +222,8 @@
                             <h3>Social Media</h3>
                             <p> Stay in touch!</p>
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
@@ -252,7 +244,7 @@
                         <div class="footer-link">
                             <h4>Get in touch!</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="{{url_for('about')}}">About Us</a></li>
                                 <li><a href="#">Customer Service</a></li>
                                 <li><a href="#">Our Sitemap</a></li>
                                 <li><a href="#">Terms &amp; Conditions</a></li>
@@ -285,7 +277,7 @@
 
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2022 <a href="#">KapsuChai</a> Design By :
+        <p class="footer-company">All Rights Reserved. &copy; 2022 <a href="{{url_for('home')}}">KapsuChai</a> Design By :
             <a href="https://www.avesgraphics.com">Aves Graphics</a></p>
     </div>
     <!-- End copyright  -->
