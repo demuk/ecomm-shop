@@ -52,4 +52,4 @@ def register():
 
 @app.route('/account', methods=['GET', 'POST'])
 def account():
-    return render_template('account.html', title='account')
+    return render_template('account.html', title='account', form = form)
