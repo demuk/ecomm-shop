@@ -115,9 +115,6 @@ def cart():
     return render_template('cart.html', cart=cart, noOfItems=noOfItems, subtotal=subtotal, title=title)
 
 
-
-
-
 @app.route('/account', methods=['GET', 'POST'])
 def account():
     form = UpdateAccountForm()
@@ -132,5 +129,4 @@ def account():
         form.lastname.data = current_user.lastname
         form.firstname.data = current_user.firstname
         form.email.data = current_user.email
-    return render_template('account.html', title='Account',
-                           form=form)
+    return render_template('account.html', title='Account',form=form)
