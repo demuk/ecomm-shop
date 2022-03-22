@@ -1,4 +1,4 @@
-% extends "base.html" %}
+{% extends "base.html" %}
 {% block content %}
     <!-- <h1>Your cart</h1> -->
     <!-- <p>Your cart is currently empty.</p> -->
@@ -23,7 +23,7 @@
 					<img src="/static/product{{ item.id }}.JPG" class="card-img-top" alt="..." style="height: 80px; width:80px">
 					<span id="itemNameTag">{{item.name}}</span>
 
-					<span id="itemNameTag"><div style=" text-align: right">${{item.price}}</div></span>
+					<span id="itemNameTag"><div style=" text-align: right">Kshs{{item.price}}</div></span>
 
 				    <form action="{{ url_for('cart') }}" method="post">
     					<div class="form-group">
