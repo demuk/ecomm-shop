@@ -1,22 +1,12 @@
-from flask_login import UserMixin
 from datetime import datetime
 from kapsuchai import db, login_manager
+from flask_login import UserMixin
 from flask import flash
 
 
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
-
-
-class Products(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    price = db.Column(db.Integer, nullable=False)
-    description = db.Column(db.Text, nullable=False)
-
-    def __repr__(self):
-        return f"Products('{self.name}', '{self.price}')"
 
 
 class User(db.Model, UserMixin):
@@ -35,6 +25,16 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return f"User('{self.firstname}','{self.lastname}', '{self.email}','{self.id}')"
+
+
+class Products(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    price = db.Column(db.Integer, nullable=False)
+    description = db.Column(db.Text, nullable=False)
+
+    def __repr__(self):
+        return f"Products('{self.name}', '{self.price}')"
 
 
 class Cart(db.Model):
