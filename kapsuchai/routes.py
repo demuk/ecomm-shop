@@ -60,6 +60,11 @@ def logout():
     return redirect(url_for('home'))
 
 
+@app.route("/terms")
+def terms():
+    return render_template('terms.html', title='Terms')
+
+
 @app.route('/about')
 def about():
     return render_template('about.html', title='About')
