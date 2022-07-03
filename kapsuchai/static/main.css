@@ -122,7 +122,11 @@ footer {
   background-color: #f2f2f2;
   font-family: 'Manjari', sans-serif;
   margin-top: 40px;
+<<<<<<< HEAD
   color: #00264d
+=======
+  color: #cf5a00;
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
 }
 
 .nav-link

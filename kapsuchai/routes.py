@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 import os
 import secrets
+=======
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
 from flask import render_template, url_for, flash, redirect, request
 from kapsuchai import app, db, bcrypt
 from kapsuchai.forms import RegistrationForm, LoginForm, UpdateAccountForm
 from kapsuchai.models import User, Products, Cart
 from flask_login import login_user, current_user, logout_user, login_required
+<<<<<<< HEAD
 from sqlalchemy import func, update
+=======
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
 
 
 def getLoginDetails():
@@ -61,6 +67,7 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('home'))
+<<<<<<< HEAD
 
 
 @app.route('/about')
@@ -93,10 +100,51 @@ def select_products():
     noOfItems = getLoginDetails()
     products = Products.query.all()
     return render_template('select_products.html', products=products, noOfItems=noOfItems, title='select products')
+=======
+
+
+@app.route("/terms")
+def terms():
+    return render_template('terms.html', title='Terms')
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html', title='About')
+
+
+@app.route("/account", methods=['GET', 'POST'])
+@login_required
+<<<<<<< HEAD
+=======
+def account():
+    form = UpdateAccountForm()
+    if form.validate_on_submit():
+        current_user.lastname = form.lastname.data
+        current_user.firstname = form.firstname.data
+        current_user.email = form.email.data
+        db.session.commit()
+        flash('Your account has been updated!', 'success')
+        return redirect(url_for('account'))
+    elif request.method == 'GET':
+        form.lastname.data = current_user.lastname
+        form.firstname.data = current_user.firstname
+        form.email.data = current_user.email
+    return render_template('account.html', title='Account',
+                           form=form)
+
+
+@app.route("/select_products", methods=['GET', 'POST'])
+def select_products():
+    noOfItems = getLoginDetails()
+    products = Products.query.all()
+    return render_template('select_products.html', products=products, noOfItems=noOfItems, title='select products')
 
 
 @app.route("/addToCart/<int:product_id>")
 @login_required
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
 def addToCart(product_id):
     # check if product is already in cart
     row = Cart.query.filter_by(product_id=product_id, buyer=current_user).first()
@@ -106,7 +154,11 @@ def addToCart(product_id):
         db.session.commit()
         flash('This item is already in your cart, 1 quantity added!', 'success')
 
+<<<<<<< HEAD
         # if not, add item to cart
+=======
+
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
     else:
         user = User.query.get(current_user.id)
         user.add_to_cart(product_id)
@@ -118,8 +170,12 @@ def addToCart(product_id):
 def cart():
     noOfItems = getLoginDetails()
     # display items in cart
+<<<<<<< HEAD
     cart = Products.query.join(Cart).add_columns(Cart.quantity, Products.price, Products.name, Products.id).filter_by(
         buyer=current_user).all()
+=======
+    cart = Products.query.join(Cart).add_columns(Cart.quantity, Products.price, Products.name, Products.id).filter_by(buyer=current_user).all()
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
     subtotal = 0
     for item in cart:
         subtotal += int(item.price) * int(item.quantity)
@@ -130,8 +186,12 @@ def cart():
         cartitem = Cart.query.filter_by(product_id=idpd).first()
         cartitem.quantity = qty
         db.session.commit()
+<<<<<<< HEAD
         cart = Products.query.join(Cart).add_columns(Cart.quantity, Products.price, Products.name,
                                                      Products.id).filter_by(buyer=current_user).all()
+=======
+        cart = Products.query.join(Cart).add_columns(Cart.quantity, Products.price, Products.name,Products.id).filter_by(buyer=current_user).all()
+>>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
         subtotal = 0
         for item in cart:
             subtotal += int(item.price) * int(item.quantity)
