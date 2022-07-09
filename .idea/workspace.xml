@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3bc1c08-1800-4520-a361-ee8e6c27a75d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ecomm-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecomm-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/kapsuchai/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/kapsuchai/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/kapsuchai/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/caramel-black-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/logo.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/logo2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic3b.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic4b.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic6b.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/pic8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/product1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/product2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/product3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/product4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/product5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/product6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/shampoo1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/shampoo2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/shampoo3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/shampoo4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/shampoo5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/images/shampoo6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/logo.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/logo2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic3b.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic4b.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic6b.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/pic7.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/product1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/product2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/product3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/product4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/product5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/product6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/shampoo1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/shampoo2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/shampoo3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/shampoo4.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/shampoo5.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/static/shampoo6.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/kapsuchai/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/kapsuchai/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kapsuchai/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/kapsuchai/templates/home.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BXR54FHt0ShB03jwciQdXEicJI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/kiptoo/Desktop/book_orama"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3bc1c08-1800-4520-a361-ee8e6c27a75d" name="Changes" comment="" />
+      <created>1657050268086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657050268086</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -13,18 +13,13 @@ class LoginForm(FlaskForm):
 
 
 class UpdateAccountForm(FlaskForm):
-<<<<<<< HEAD
     firstname = StringField('First Name',
                            validators=[DataRequired(), Length(min=2, max=20)])
     lastname = StringField('Last Name',
                            validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
-=======
-    firstname = StringField('First Name',validators=[DataRequired(), Length(min=2, max=20)])
-    lastname = StringField('Last Name',validators=[DataRequired(), Length(min=2, max=20)])
-    email = StringField('Email',validators=[DataRequired(), Email()])
->>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
+
     submit = SubmitField('Update')
 
     def validate_email(self, email):
@@ -34,10 +29,7 @@ class UpdateAccountForm(FlaskForm):
                 raise ValidationError('That email is taken. Please choose a different one.')
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> da9ac281f9990123f436a30f01ab2b747d445c4c
 class RegistrationForm(FlaskForm):
     firstname = StringField('First Name', validators=[DataRequired(), Length(min=2, max=20)])
     lastname = StringField('Last Name', validators=[DataRequired(), Length(min=2, max=20)])
