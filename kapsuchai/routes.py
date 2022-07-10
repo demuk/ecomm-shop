@@ -39,7 +39,33 @@ def register():
         db.session.commit()
         flash('Your account has been created!', 'success')
         return redirect(url_for('login'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('register.html', title=title, form=form)
+
+
+def save_product_image(product_image):
+    random_hex = secrets.token_hex(8)
+    _, f_text = os.path.splitext(product_image.filename)
+    picture_fn = random_hex + f_text
+    picture_path = os.path.join(app.root_path, 'static/', picture_fn)
+    product_image.save(picture_path)
+    return picture_fn
+
+
+@app.route('/addproduct',methods=['GET','POST'])
+@login_required
+def add_product():
+    if request.method == 'POST':
+        if request.files:
+            image = request.files['product_image']
+            image_file = save_product_image(image)
+            product_image = image_file
+            product = Products(name=request.form['name'], price=request.form['price'],
+                              description=request.form['description'],product_image=product_image)
+            db.session.add(product)
+            db.session.commit()
+            flash('Book added successfully!')
+            return redirect(url_for('select_products'))
+    return render_template('addproduct.html')
 
 
 @app.route("/login", methods=['GET', 'POST'])
