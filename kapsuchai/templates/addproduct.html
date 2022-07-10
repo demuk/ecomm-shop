@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="{{url_for('add_product')}}" method="post" enctype="multipart/form-data">
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <input type="text" name="name" id="form4Example1" class="form-control" />
+    <label class="form-label"  for="form4Example1">Name</label>
+  </div>
+
+  <!-- Price input -->
+  <div class="form-outline mb-4">
+    <input type="number" name="price" id="form4Example2" class="form-control" />
+    <label class="form-label" for="form4Example2">Price</label>
+  </div>
+
+  <!-- Image input -->
+  <div class="form-outline mb-4">
+    <input type="file" name="product_image" id="form4Example2" class="form-control" />
+    <label class="form-label" for="form4Example2">Product Image</label>
+  </div>
+
+  <!-- Message input -->
+  <div class="form-outline mb-4">
+    <textarea class="form-control" name="description" id="form4Example3" rows="4"></textarea>
+    <label class="form-label" for="form4Example3">Description</label>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary ">Add</button>
+</form>
+
+{% endblock content %}
