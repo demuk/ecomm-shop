@@ -63,7 +63,7 @@ def add_product():
                               description=request.form['description'],product_image=product_image)
             db.session.add(product)
             db.session.commit()
-            flash('Book added successfully!')
+            flash('Product added successfully!')
             return redirect(url_for('select_products'))
     return render_template('addproduct.html')
 
